@@ -8,7 +8,7 @@ pdf2txt was originally written for storing web-article walkthroughs as plaintext
 you can collect tons of information in a small form-factor which is easily pushed to github.
 
 
-__Methodology__  
+__Methodology:__  
  - __Dependencies:__  
    - `Imagemagick`  
      - Ensure: `ghostscript` _usually installs as a dependency of Imagemagick_  
