@@ -12,7 +12,7 @@ __Methodology__
  - __Dependencies:__  
    - `Imagemagick`  
      - Ensure: `ghostscript` _usually installs as a dependency of Imagemagick_  
-   - `Tesseract` _aka. Tesseract-ocr_  
+   - `Tesseract` _aka._ `Tesseract-ocr`  
 
 1. Converts input PDF file to TIFF image format (compatible with Tesseract)  
   - Note: this _copies_ the PDF -> TIFF with approximately the same file size, depending on colors/text-density  
