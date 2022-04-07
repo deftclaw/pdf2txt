@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# PDF -> TIFF -> TXT
+p2t() {
+  pdf="$1"
+  leaf="$(echo $pdf|awk -F '/' '{print $NF}'|awk -F '.' '{print $(NF-1)}')"
+  tif="$leaf.tiff"
+
+  [[ -f $pdf ]]   || return 1
+  [[ ! -f $tif ]] || return 3
+
+  # Convert PDF -> TIFF with high-enough PPI for accurate OCR
+  convert \
+   -density 300 $pdf \
+   -background white \
+   -alpha background \
+   -compress Group4 $tif \
+  && tesseract $tif $leaf
+  # Analyze the TIFF with OCR to convert the Image to text
+}
+
+[[ $1 ]]       || exit 1
+[[ $# -gt 1 ]] || p2t "$1"
