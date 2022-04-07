@@ -15,7 +15,7 @@ __Methodology__
    - `Tesseract` _aka. Tesseract-ocr_  
 
 1. Converts input PDF file to TIFF image format (compatible with Tesseract)  
-  - Note: this _copies_ the PDF -> TIFF with approximately the same file size  
+  - Note: this _copies_ the PDF -> TIFF with approximately the same file size, depending on colors/text-density  
 2. Analyzes the TIFF file with OCR to convert the pixels to text-characters  
 
 ## Usage:  
