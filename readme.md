@@ -19,4 +19,4 @@ __Methodology__
 2. Analyzes the TIFF file with OCR to convert the pixels to text-characters  
 
 ## Usage:  
-1. `. pdf2txt /path/to/document.pdf` _you could also `chmod u+x pdf2txt; ./pdf2txt /path/to/document.txt`_  
+1. `. pdf2txt /path/to/document.pdf` _you could also_ `chmod u+x pdf2txt; ./pdf2txt /path/to/document.txt`  
